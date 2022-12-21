@@ -1,0 +1,20 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AutoResizerAllowEC2Actions",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceStatus",
+                "ec2:Start*",
+                "ec2:ReportInstanceStatus",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:Stop*",
+                "ec2:DeleteTags",
+                "ec2:CreateTags"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
